@@ -12,7 +12,8 @@ mvn quarkus:dev
 - the Narayana Transaction Manager coordinating all transactions
 - Agroal, the high performance Datasource implementation
 - Infinispan used as    2nd level caching: enabled on both entities and queries
-- The Undertow webserver
+- The Undertow webserve
+- Hibernate custom Naming Strategies
 
 
 https://github.com/quarkusio/quarkus-quickstarts/tree/main/hibernate-orm-quickstart
