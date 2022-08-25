@@ -1,0 +1,240 @@
+12:53:11 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+12:53:11 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 2.376s. Listening on: http://localhost:8080
+12:53:11 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+12:53:11 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+12:54:36 ERROR [or.ac.qu.GreetingResource] (executor-thread-0) Failed to handle request: javax.ws.rs.WebApplicationException: State with id of 7 does not exist.
+	at org.acme.quickstart.GreetingResource.getSingle(GreetingResource.java:50)
+	at org.acme.quickstart.GreetingResource_Subclass.getSingle$$superforward1(GreetingResource_Subclass.zig:331)
+	at org.acme.quickstart.GreetingResource_Subclass$$function$$4.apply(GreetingResource_Subclass$$function$$4.zig:33)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:54)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor.proceed(InvocationInterceptor.java:62)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor.monitor(InvocationInterceptor.java:49)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor_Bean.intercept(InvocationInterceptor_Bean.zig:521)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at org.acme.quickstart.GreetingResource_Subclass.getSingle(GreetingResource_Subclass.zig:680)
+	at org.acme.quickstart.GreetingResource_ClientProxy.getSingle(GreetingResource_ClientProxy.zig:222)
+	at org.acme.quickstart.GreetingResource$quarkusrestinvoker$getSingle_bf6c8b61eb5f17d34feee4b406bb8278897f2675.invoke(GreetingResource$quarkusrestinvoker$getSingle_bf6c8b61eb5f17d34feee4b406bb8278897f2675.zig:39)
+	at org.jboss.resteasy.reactive.server.handlers.InvocationHandler.handle(InvocationHandler.java:29)
+	at org.jboss.resteasy.reactive.server.handlers.InvocationHandler.handle(InvocationHandler.java:7)
+	at org.jboss.resteasy.reactive.common.core.AbstractResteasyReactiveContext.run(AbstractResteasyReactiveContext.java:141)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$13.runWith(VertxCoreRecorder.java:543)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+13:11:39 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.012s
+08:21:57 INFO  [or.hi.jp.in.ut.LogHelper] (Quarkus Main Thread) HHH000204: Processing PersistenceUnitInfo [name: <default>]
+08:21:57 INFO  [or.hi.Version] (Quarkus Main Thread) HHH000412: Hibernate ORM core version 5.5.8.Final-redhat-00001
+08:21:57 INFO  [or.hi.an.co.Version] (Quarkus Main Thread) HCANN000001: Hibernate Commons Annotations {5.1.2.Final-redhat-00003}
+08:21:57 INFO  [or.hi.di.Dialect] (Quarkus Main Thread) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08:21:57 INFO  [io.qu.de.de.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+08:21:57 ERROR [io.qu.ru.bo.StartupActionImpl] (Quarkus Main Thread) Error running Quarkus: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ExceptionInInitializerError
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/java.lang.Class.newInstance(Class.java:584)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:65)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:42)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:119)
+	at io.quarkus.runner.GeneratedMain.main(GeneratedMain.zig:29)
+	... 6 more
+Caused by: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.runner.ApplicationImpl.<clinit>(ApplicationImpl.zig:356)
+	... 15 more
+Caused by: java.lang.NullPointerException
+	at org.acme.quickstart.CamelCaseToPascalCaseConverter.formatIdentifier(CamelCaseToPascalCaseConverter.java:35)
+	at org.acme.quickstart.CamelCaseToPascalCaseConverter.toPhysicalCatalogName(CamelCaseToPascalCaseConverter.java:11)
+	at org.hibernate.boot.model.relational.Namespace.<init>(Namespace.java:46)
+	at org.hibernate.boot.model.relational.Database.makeNamespace(Database.java:71)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:51)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:42)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:187)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootMetadataBuilder.build(FastBootMetadataBuilder.java:354)
+	at io.quarkus.hibernate.orm.runtime.PersistenceUnitsHolder.createMetadata(PersistenceUnitsHolder.java:101)
+	at io.quarkus.hibernate.orm.runtime.PersistenceUnitsHolder.constructMetadataAdvance(PersistenceUnitsHolder.java:73)
+	at io.quarkus.hibernate.orm.runtime.PersistenceUnitsHolder.initializeJpa(PersistenceUnitsHolder.java:40)
+	at io.quarkus.hibernate.orm.runtime.HibernateOrmRecorder$1.created(HibernateOrmRecorder.java:68)
+	at io.quarkus.arc.runtime.ArcRecorder.initBeanContainer(ArcRecorder.java:70)
+	at io.quarkus.deployment.steps.ArcProcessor$generateResources-1025303321.deploy_0(ArcProcessor$generateResources-1025303321.zig:128)
+	at io.quarkus.deployment.steps.ArcProcessor$generateResources-1025303321.deploy(ArcProcessor$generateResources-1025303321.zig:40)
+	at io.quarkus.runner.ApplicationImpl.<clinit>(ApplicationImpl.zig:314)
+	... 15 more
+
+08:21:57 INFO  [or.jb.threads] (main) JBoss Threads version 3.4.2.Final-redhat-00001
+08:23:16 INFO  [io.qu.de.de.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Live reload total time: 0.305s 
+08:29:29 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+08:29:30 ERROR [or.hi.in.SessionFactoryImpl] (JPA Startup Thread: <default>) HHH000177: Error in named query: States.findAll: org.hibernate.QueryException: could not resolve property: name of: org.acme.quickstart.State [SELECT s FROM org.acme.quickstart.State s ORDER BY s.name]
+	at org.hibernate.QueryException.generateQueryException(QueryException.java:120)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.query.spi.NamedQueryRepository.checkNamedQueries(NamedQueryRepository.java:177)
+	at org.hibernate.internal.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:584)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:338)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:71)
+	at io.quarkus.hibernate.orm.runtime.FastBootHibernatePersistenceProvider.createEntityManagerFactory(FastBootHibernatePersistenceProvider.java:67)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$LazyPersistenceUnit.get(JPAConfig.java:149)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$1.run(JPAConfig.java:58)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.hibernate.QueryException: could not resolve property: name of: org.acme.quickstart.State
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:77)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:71)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toType(AbstractEntityPersister.java:2051)
+	at org.hibernate.hql.internal.ast.tree.FromElementType.getPropertyType(FromElementType.java:412)
+	at org.hibernate.hql.internal.ast.tree.FromElement.getPropertyType(FromElement.java:520)
+	at org.hibernate.hql.internal.ast.tree.DotNode.getDataType(DotNode.java:695)
+	at org.hibernate.hql.internal.ast.tree.DotNode.prepareLhs(DotNode.java:269)
+	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:209)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:1055)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1308)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.orderExpr(HqlSqlBaseWalker.java:1892)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.orderExprs(HqlSqlBaseWalker.java:1686)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.orderClause(HqlSqlBaseWalker.java:1659)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:671)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:330)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:278)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 14 more
+
+08:29:30 ERROR [io.qu.ru.Application] (Quarkus Main Thread) Failed to start application (with profile dev): org.hibernate.HibernateException: Errors in named queries: 
+States.findAll failed because of: org.hibernate.QueryException: could not resolve property: name of: org.acme.quickstart.State [SELECT s FROM org.acme.quickstart.State s ORDER BY s.name]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:352)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:71)
+	at io.quarkus.hibernate.orm.runtime.FastBootHibernatePersistenceProvider.createEntityManagerFactory(FastBootHibernatePersistenceProvider.java:67)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$LazyPersistenceUnit.get(JPAConfig.java:149)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$1.run(JPAConfig.java:58)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+08:29:30 INFO  [io.qu.de.de.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+08:30:13 INFO  [io.qu.de.de.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Restarting quarkus due to changes in State.class.
+08:30:13 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 0.534s. Listening on: http://localhost:8080
+08:30:13 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+08:30:13 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+08:30:13 INFO  [io.qu.de.de.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Live reload total time: 0.547s 
+08:32:55 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.013s
+08:37:31 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+08:37:32 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 2.139s. Listening on: http://localhost:8080
+08:37:32 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+08:37:32 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+08:38:49 INFO  [io.qu.de.de.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Restarting quarkus due to changes in CamelCaseToPascalCaseConverter.class.
+08:38:49 INFO  [io.quarkus] (Quarkus Main Thread) getting-started stopped in 0.015s
+08:38:49 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+08:38:49 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 0.409s. Listening on: http://localhost:8080
+08:38:49 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+08:38:49 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+08:38:49 INFO  [io.qu.de.de.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Live reload total time: 0.437s 
+08:40:57 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.033s
+08:41:05 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+08:41:06 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 2.162s. Listening on: http://localhost:8080
+08:41:06 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+08:41:06 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+08:43:37 INFO  [io.qu.de.de.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Restarting quarkus due to changes in State.class.
+08:43:37 INFO  [io.quarkus] (Quarkus Main Thread) getting-started stopped in 0.028s
+08:43:38 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+08:43:38 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 0.535s. Listening on: http://localhost:8080
+08:43:38 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+08:43:38 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+08:43:38 INFO  [io.qu.de.de.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Live reload total time: 0.586s 
+08:44:14 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.025s
+08:44:21 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+08:44:21 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 2.060s. Listening on: http://localhost:8080
+08:44:21 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+08:44:21 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+12:49:41 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.016s
+07:06:37 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+07:06:37 ERROR [io.qu.ru.Application] (Quarkus Main Thread) Failed to start application (with profile dev): liquibase.exception.ChangeLogParseException: The file db/changeLog.xml was not found in
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:82)
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15)
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:377)
+	at liquibase.Liquibase.validate(Liquibase.java:2245)
+	at io.quarkus.liquibase.runtime.LiquibaseRecorder.doStartActions(LiquibaseRecorder.java:60)
+	at io.quarkus.deployment.steps.LiquibaseProcessor$startLiquibase763757012.deploy_0(LiquibaseProcessor$startLiquibase763757012.zig:67)
+	at io.quarkus.deployment.steps.LiquibaseProcessor$startLiquibase763757012.deploy(LiquibaseProcessor$startLiquibase763757012.zig:40)
+	at io.quarkus.runner.ApplicationImpl.doStart(ApplicationImpl.zig:796)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:101)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:66)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:42)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:119)
+	at io.quarkus.runner.GeneratedMain.main(GeneratedMain.zig:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+07:06:37 INFO  [io.qu.de.de.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+07:13:44 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+07:13:45 ERROR [io.qu.ru.Application] (Quarkus Main Thread) Failed to start application (with profile dev): liquibase.exception.ChangeLogParseException: The file db/changeLog.xml was not found in
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:82)
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15)
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:377)
+	at liquibase.Liquibase.validate(Liquibase.java:2245)
+	at io.quarkus.liquibase.runtime.LiquibaseRecorder.doStartActions(LiquibaseRecorder.java:60)
+	at io.quarkus.deployment.steps.LiquibaseProcessor$startLiquibase763757012.deploy_0(LiquibaseProcessor$startLiquibase763757012.zig:67)
+	at io.quarkus.deployment.steps.LiquibaseProcessor$startLiquibase763757012.deploy(LiquibaseProcessor$startLiquibase763757012.zig:40)
+	at io.quarkus.runner.ApplicationImpl.doStart(ApplicationImpl.zig:796)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:101)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:66)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:42)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:119)
+	at io.quarkus.runner.GeneratedMain.main(GeneratedMain.zig:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+07:13:45 INFO  [io.qu.de.de.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+07:14:15 WARN  [io.qu.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.liquibase.migrate-at-start" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+07:14:16 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+07:14:16 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 2.348s. Listening on: http://localhost:8080
+07:14:16 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+07:14:16 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+07:14:20 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.086s
+07:14:27 WARN  [io.qu.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.liquibase.migrate-at-start" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+07:14:28 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+07:14:28 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 2.091s. Listening on: http://localhost:8080
+07:14:28 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+07:14:28 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+07:14:51 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.024s
+07:14:58 WARN  [io.qu.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.liquibase.migrate-at-start" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+07:14:58 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+07:14:59 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 2.130s. Listening on: http://localhost:8080
+07:14:59 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+07:14:59 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+07:15:06 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.047s
+07:15:17 WARN  [io.qu.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.liquibase.migrate-at-start" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+07:15:18 INFO  [io.ag.pool] (Quarkus Main Thread) Datasource '<default>': Initial size smaller than min. Connections will be created when necessary
+07:15:18 INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.2.5.Final-redhat-00010) started in 2.167s. Listening on: http://localhost:8080
+07:15:18 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+07:15:18 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, narayana-jta, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation]
+07:15:22 INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.025s

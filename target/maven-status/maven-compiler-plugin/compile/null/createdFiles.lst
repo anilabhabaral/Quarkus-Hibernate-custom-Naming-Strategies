@@ -1,0 +1,4 @@
+org/acme/quickstart/State.class
+org/acme/quickstart/CamelCaseToPascalCaseConverter.class
+org/acme/quickstart/GreetingResource$ErrorMapper.class
+org/acme/quickstart/GreetingResource.class
